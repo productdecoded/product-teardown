@@ -3,351 +3,225 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VMware Teardown — Product Teardown</title>
-  <meta name="description" content="Deep-dive product teardown of VMware / Broadcom — business model, competitive landscape, and strategic recommendations." />
+  <title>VMware Teardown — ProductDecoded</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .page-hero { background: linear-gradient(135deg, #0a0a0a 0%, #0d1b2a 100%); }
-    .page-hero-bg {
-      background:
-        radial-gradient(ellipse 50% 60% at 90% 10%, rgba(71,194,255,0.08) 0%, transparent 60%),
-        radial-gradient(ellipse 30% 40% at 5% 90%, rgba(232,255,71,0.04) 0%, transparent 60%);
-    }
-  </style>
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <a href="index.html" class="nav-logo">PRODUCT TEARDOWN</a>
-    <ul class="nav-links">
-      <li><a href="index.html#teardowns">All Teardowns</a></li>
-      <li><a href="index.html#about">Framework</a></li>
-    </ul>
-  </nav>
+<nav>
+  <a href="index.html" class="nav-logo">Product<span>Decoded</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#teardowns">All Teardowns</a></li>
+    <li><a href="index.html#framework">Framework</a></li>
+  </ul>
+</nav>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="page-hero-bg"></div>
-    <a href="index.html" class="back-link">← Back to all teardowns</a>
-    <div class="page-category">001 · Infrastructure · Virtualization</div>
-    <h1 class="page-title">VMWARE</h1>
-    <p class="page-subtitle">How a $61B acquisition became the most controversial pricing story in enterprise tech — and what it reveals about platform power.</p>
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <a href="index.html" class="back-link">← All Teardowns</a>
+    <div class="page-eyebrow">001 · Infrastructure · Virtualization</div>
+    <h1 class="page-title">VMware</h1>
+    <p class="page-subtitle">How a $61B acquisition became the most controversial pricing story in enterprise tech — and what it reveals about platform power and switching costs.</p>
     <div class="page-meta-bar">
-      <div class="meta-item">
-        <span class="meta-label">Acquirer</span>
-        <span class="meta-value">Broadcom Inc.</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Deal Size</span>
-        <span class="meta-value">$61 Billion</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Founded</span>
-        <span class="meta-value">1998</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Category</span>
-        <span class="meta-value">Infrastructure Virtualization</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Target Market</span>
-        <span class="meta-value">Global 2000 Enterprises</span>
-      </div>
+      <div class="meta-item"><span class="meta-label">Acquirer</span><span class="meta-value">Broadcom Inc.</span></div>
+      <div class="meta-item"><span class="meta-label">Deal Size</span><span class="meta-value">$61 Billion</span></div>
+      <div class="meta-item"><span class="meta-label">Founded</span><span class="meta-value">1998</span></div>
+      <div class="meta-item"><span class="meta-label">Category</span><span class="meta-value">Infrastructure Virtualization</span></div>
+      <div class="meta-item"><span class="meta-label">Target Market</span><span class="meta-value">Global 2000 Enterprises</span></div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- LAYER 1: MARKET CONTEXT -->
-  <section class="content-section full-width">
-    <div class="layer-label">Layer 01 · Company & Market Context</div>
-    <h2 class="content-h2">MARKET CONTEXT</h2>
+<nav class="layer-nav">
+  <div class="layer-nav-inner">
+    <a href="#l1" class="layer-nav-item">01 · Context</a>
+    <a href="#l2" class="layer-nav-item">02 · Product</a>
+    <a href="#l3" class="layer-nav-item">03 · Users</a>
+    <a href="#l4" class="layer-nav-item">04 · Value Prop</a>
+    <a href="#l6" class="layer-nav-item">06 · Business Model</a>
+    <a href="#l7" class="layer-nav-item">07 · Competitive</a>
+    <a href="#l8" class="layer-nav-item">08 · Assessment</a>
+    <a href="#l9" class="layer-nav-item">09 · PM Lens</a>
+  </div>
+</nav>
+
+<!-- LAYER 1 -->
+<div id="l1" class="content-section alt">
+  <div class="ci">
+    <div class="layer-label">Layer 01 · Company &amp; Market Context</div>
+    <h2 class="content-h2">Market Context</h2>
     <p class="content-body">VMware operates at the foundation of modern enterprise IT. The server virtualization market it dominates is worth ~$8B annually, but the broader cloud infrastructure market it competes in exceeds $200B. Broadcom's acquisition thesis: own the irreplaceable layer between hardware and workloads in large enterprises.</p>
-
-    <div class="content-grid">
-      <div class="content-grid-item">
-        <div class="grid-item-label">Market Position</div>
-        <div class="grid-item-value">Dominant hypervisor vendor with ~70%+ market share in enterprise server virtualization</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">Strategic Shift Post-Acquisition</div>
-        <div class="grid-item-value">From broad commercial platform to a laser-focused Global 2000 enterprise play under Broadcom</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">Key Macro Trend</div>
-        <div class="grid-item-value">Hybrid cloud adoption driving demand for consistent infrastructure layer across on-prem and cloud environments</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">Acquisition Closed</div>
-        <div class="grid-item-value">November 2023 — Broadcom immediately began restructuring the product portfolio and partner ecosystem</div>
-      </div>
+    <div class="data-grid">
+      <div class="data-cell"><div class="data-label">Market Position</div><div class="data-value">~70%+ share in enterprise server virtualization</div><div class="data-sub">Dominant hypervisor vendor with no true feature-parity replacement after 25 years of ecosystem development.</div></div>
+      <div class="data-cell"><div class="data-label">Strategic Shift Post-Acquisition</div><div class="data-value">From broad commercial platform to Global 2000-only</div><div class="data-sub">Broadcom explicitly de-prioritized SMB and mid-market. If you're not a large enterprise, you're being pushed out.</div></div>
+      <div class="data-cell"><div class="data-label">Key Macro Trend</div><div class="data-value">Hybrid cloud driving demand for consistent infrastructure</div><div class="data-sub">Enterprises want a single operational model across on-premises and public cloud. VCF is Broadcom's answer.</div></div>
+      <div class="data-cell"><div class="data-label">Acquisition Closed</div><div class="data-value">November 2023 — restructuring began immediately</div><div class="data-sub">Portfolio reduced from 168 SKUs to 4 core bundles. Partner ecosystem cut from 4,500+ providers to ~300.</div></div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- LAYER 2: PRODUCT OVERVIEW -->
-  <section class="content-section full-width">
-    <div class="layer-label">Layer 02 · Product Overview</div>
-    <h2 class="content-h2">PRODUCT PORTFOLIO</h2>
-    <p class="content-body">Post-acquisition, Broadcom dramatically simplified VMware's product portfolio — from 168 SKUs down to 4 core bundles. The strategy: eliminate complexity, force upgrades to flagship, maximize revenue per account.</p>
+<!-- LAYER 2 -->
+<div id="l2" class="content-section">
+  <div class="layer-label">Layer 02 · Product Overview</div>
+  <h2 class="content-h2">Product Portfolio</h2>
+  <p class="content-body">Post-acquisition, Broadcom dramatically simplified VMware's product portfolio — from 168 SKUs down to 4 core bundles. The strategy: eliminate complexity, force upgrades to flagship, maximize revenue per account.</p>
+  <div class="data-grid">
+    <div class="data-cell"><div class="data-label">VMware Cloud Foundation (VCF)</div><div class="data-value">Flagship enterprise bundle</div><div class="data-sub">Combines vSphere, vSAN, NSX, and Kubernetes into a full private cloud platform. VCF 9.0 launched June 2025. The primary upsell target for all large accounts.</div></div>
+    <div class="data-cell"><div class="data-label">vSphere Foundation (VVF)</div><div class="data-value">Core compute virtualization</div><div class="data-sub">The foundational hypervisor. Most widely deployed enterprise hypervisor globally. Entry point for customers not yet ready for full VCF.</div></div>
+    <div class="data-cell"><div class="data-label">NSX</div><div class="data-value">Software-defined networking &amp; security</div><div class="data-sub">Network virtualization layer above physical infrastructure. Key VCF component and significant upsell from vSphere-only deployments.</div></div>
+    <div class="data-cell"><div class="data-label">vSAN</div><div class="data-value">Software-defined storage</div><div class="data-sub">Pools server-attached storage into shared datastores. Eliminates need for traditional SAN infrastructure. Bundled into VCF.</div></div>
+    <div class="data-cell"><div class="data-label">Omnissa (Spun Off — July 2024)</div><div class="data-value">End-User Computing — Horizon + Workspace ONE</div><div class="data-sub">Sold to KKR for ~$4B. Now an independent company — no longer part of VMware/Broadcom. VDI and UEM products operating under a new brand.</div></div>
+    <div class="data-cell"><div class="data-label">Carbon Black (Merged)</div><div class="data-value">Endpoint Security → Symantec</div><div class="data-sub">Merged into Broadcom's Symantec security division. No longer a standalone VMware product. Customers redirected to the Symantec portfolio.</div></div>
+  </div>
+</div>
 
-    <div class="content-grid">
-      <div class="content-grid-item">
-        <div class="grid-item-label">VMware Cloud Foundation (VCF)</div>
-        <div class="grid-item-value">Flagship enterprise bundle</div>
-        <div class="grid-item-sub">Combines vSphere, vSAN, NSX, and Kubernetes into a full private cloud platform. The primary upsell target for all large accounts. VCF 9.0 launched June 2025.</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">vSphere Foundation (VVF)</div>
-        <div class="grid-item-value">Core compute virtualization</div>
-        <div class="grid-item-sub">The foundational hypervisor product. Most widely deployed enterprise hypervisor globally. Entry point for customers not ready for full VCF.</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">NSX</div>
-        <div class="grid-item-value">Software-defined networking & security</div>
-        <div class="grid-item-sub">Network virtualization layer that sits above physical infrastructure. Key component of VCF and a significant upsell from vSphere-only deployments.</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">vSAN</div>
-        <div class="grid-item-value">Software-defined storage</div>
-        <div class="grid-item-sub">Pools server-attached storage into shared datastores. Eliminates need for traditional SAN infrastructure. Bundled into VCF.</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">Omnissa (Spun Off)</div>
-        <div class="grid-item-value">End-User Computing — Horizon + Workspace ONE</div>
-        <div class="grid-item-sub">Sold to KKR in July 2024 for ~$4B. Now an independent company. VDI and unified endpoint management products no longer part of VMware/Broadcom.</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">Carbon Black (Merged)</div>
-        <div class="grid-item-value">Endpoint Security</div>
-        <div class="grid-item-sub">Merged into Broadcom's Symantec security division. No longer a standalone VMware product. Enterprise security customers redirected to Symantec portfolio.</div>
-      </div>
+<!-- LAYER 3 -->
+<div id="l3" class="content-section alt">
+  <div class="ci">
+    <div class="layer-label">Layer 03 · User &amp; Customer Analysis</div>
+    <h2 class="content-h2">Who It Serves</h2>
+    <p class="content-body">VMware has always had a dual-audience challenge: the IT administrators who live in vCenter every day, and the CIOs who sign multi-million dollar ELAs. Post-Broadcom, this tension has reached a breaking point — the admins are furious, the executives are calculating switching costs.</p>
+    <div class="data-grid">
+      <div class="data-cell"><div class="data-label">Primary User</div><div class="data-value">VMware Administrators &amp; Infrastructure Engineers</div><div class="data-sub">Deep technical users who manage vCenter environments. Historically brand-loyal. Now VMware's loudest critics — their frustration is the biggest long-term risk to renewal rates.</div></div>
+      <div class="data-cell"><div class="data-label">Economic Buyer</div><div class="data-value">CIO / CTO / VP Infrastructure</div><div class="data-sub">Signs the ELA. Evaluates VMware on risk reduction, compliance, and total cost. Currently under intense pressure to justify renewal costs to boards and CFOs.</div></div>
+      <div class="data-cell"><div class="data-label">Target Segment (Post-Broadcom)</div><div class="data-value">Global 2000 Enterprises Only</div><div class="data-sub">Broadcom has made its strategic intent explicit. Smaller organizations are effectively being priced out and de-supported through partner ecosystem reduction.</div></div>
+      <div class="data-cell"><div class="data-label">Displaced Segment</div><div class="data-value">SMBs, MSPs, and Mid-Market Companies</div><div class="data-sub">Cloud Service Providers cut from 4,500+ globally to ~300 Premier and 12 Pinnacle partners. Smaller customers left without supported migration paths or commercial options.</div></div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- LAYER 3: USERS -->
-  <section class="content-section full-width">
-    <div class="layer-label">Layer 03 · User & Customer Analysis</div>
-    <h2 class="content-h2">WHO IT SERVES</h2>
-    <p class="content-body">VMware has always had a dual-audience challenge: the IT administrators who live in vCenter every day, and the CIOs/CTOs who sign the multi-million dollar ELAs. Post-Broadcom, this tension has reached a breaking point — the admins are furious, the executives are calculating switching costs.</p>
+<!-- LAYER 4 -->
+<div id="l4" class="content-section">
+  <div class="layer-label">Layer 04 · Problem &amp; Value Proposition</div>
+  <h2 class="content-h2">Value Proposition</h2>
+  <p class="content-body">VMware's original value prop — run more workloads on less hardware with more flexibility — remains valid. What Broadcom has changed is the commercial proposition: from "essential infrastructure at reasonable cost" to "irreplaceable infrastructure at maximum extractable price."</p>
+  <div class="data-grid">
+    <div class="data-cell"><div class="data-label">Functional Value</div><div class="data-value">Still best-in-class — no true replacement exists</div><div class="data-sub">No competing hypervisor matches vSphere's full feature set, stability record, or tooling ecosystem built over 25 years of enterprise deployment.</div></div>
+    <div class="data-cell"><div class="data-label">Emotional Value</div><div class="data-value">Severely eroded under Broadcom</div><div class="data-sub">VMware was a beloved brand among sysadmins. Abrupt licensing changes, partner cuts, and audit threats have destroyed decades of community goodwill.</div></div>
+    <div class="data-cell"><div class="data-label">Economic Value</div><div class="data-value">Increasingly questioned as prices rise 8x–15x</div><div class="data-sub">Customers who could justify the old pricing are now running ROI analyses on migration to Nutanix, Azure Stack HCI, or public cloud workload migration.</div></div>
+    <div class="data-cell"><div class="data-label">Broadcom's Counter-Argument</div><div class="data-value">VCF bundles deliver more value than vSphere alone</div><div class="data-sub">Broadcom argues that forcing customers onto VCF — which includes networking, storage, and security — provides better total economics. Most customers disagree with the framing.</div></div>
+  </div>
+</div>
 
-    <div class="content-grid">
-      <div class="content-grid-item">
-        <div class="grid-item-label">Primary User</div>
-        <div class="grid-item-value">VMware Administrators & Infrastructure Engineers</div>
-        <div class="grid-item-sub">Deep technical users who manage vCenter environments. Highly skilled, brand-loyal historically. Now the most vocal critics of Broadcom's changes.</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">Economic Buyer</div>
-        <div class="grid-item-value">CIO / CTO / VP Infrastructure</div>
-        <div class="grid-item-sub">Signs the ELA. Evaluates VMware on risk reduction, compliance, and total cost of infrastructure. Currently under intense pressure to justify renewal costs.</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">Target Segment (Post-Broadcom)</div>
-        <div class="grid-item-value">Global 2000 Enterprises Only</div>
-        <div class="grid-item-sub">Broadcom explicitly de-prioritized SMB and mid-market. If you're not a large enterprise, you're effectively being pushed out of the ecosystem.</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">Displaced Segment</div>
-        <div class="grid-item-value">SMBs, MSPs, and Mid-Market Companies</div>
-        <div class="grid-item-sub">Partner ecosystem dramatically reduced from 4,500+ cloud providers to ~300 Premier and 12 Pinnacle partners. Smaller customers left scrambling for alternatives.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LAYER 4: VALUE PROP -->
-  <section class="content-section full-width">
-    <div class="layer-label">Layer 04 · Problem & Value Proposition</div>
-    <h2 class="content-h2">VALUE PROPOSITION</h2>
-    <p class="content-body">VMware's original value prop — run more workloads on less hardware, with more flexibility — remains valid. What Broadcom has changed is the commercial proposition: from "essential infrastructure at reasonable cost" to "irreplaceable infrastructure at maximum extractable price."</p>
-
-    <div class="content-grid">
-      <div class="content-grid-item">
-        <div class="grid-item-label">Functional Value</div>
-        <div class="grid-item-value">Still best-in-class hypervisor with no true feature-parity replacement</div>
-        <div class="grid-item-sub">No competing hypervisor matches vSphere's full feature set, stability record, and tooling ecosystem built up over 25 years.</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">Emotional Value</div>
-        <div class="grid-item-value">Severely eroded under Broadcom</div>
-        <div class="grid-item-sub">VMware was a beloved brand among sysadmins. The abrupt licensing changes, partner cuts, and audit threats have destroyed decades of goodwill.</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">Economic Value</div>
-        <div class="grid-item-value">Increasingly questioned as prices rise 8x–15x</div>
-        <div class="grid-item-sub">Customers who could justify the old pricing are now running ROI analyses on migration to Nutanix, Azure Stack HCI, or public cloud.</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">Broadcom's Counter-Argument</div>
-        <div class="grid-item-value">VCF bundles deliver more value than vSphere alone</div>
-        <div class="grid-item-sub">Broadcom argues that forcing customers onto VCF (which includes networking, storage, and security) provides better economics at scale. Most customers disagree.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LAYER 5: BUSINESS MODEL -->
-  <section class="content-section full-width">
+<!-- LAYER 6 -->
+<div id="l6" class="content-section alt">
+  <div class="ci">
     <div class="layer-label">Layer 06 · Business Model</div>
-    <h2 class="content-h2">BUSINESS MODEL</h2>
-    <p class="content-body">The Broadcom playbook is a masterclass in monetizing irreplaceable enterprise software. They stopped selling perpetual licenses entirely in early 2024, forcing all customers to subscription. Pricing shifted to per-core, with a minimum floor that dramatically inflates bills for large deployments.</p>
-
-    <div class="content-grid">
-      <div class="content-grid-item">
-        <div class="grid-item-label">Revenue Model</div>
-        <div class="grid-item-value">100% Subscription — Perpetual Licenses Eliminated</div>
-        <div class="grid-item-sub">As of early 2024, no new perpetual licenses sold. All products moved to annual or multi-year subscription. Massive increase in recurring revenue predictability.</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">Pricing Mechanism</div>
-        <div class="grid-item-value">Per Physical CPU Core — 32-Core Packs Minimum</div>
-        <div class="grid-item-sub">Every CPU is counted as at least 16 cores. Cores sold in packs of 32. Large environments with many low-core CPUs face outsized cost increases.</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">Revenue Performance</div>
-        <div class="grid-item-value">$30B VCF TCV Committed Over 3 Years</div>
-        <div class="grid-item-sub">Broadcom reported 80 million VCF core entitlements committed. Financially, the strategy is working — even as customers express outrage.</div>
-      </div>
-      <div class="content-grid-item">
-        <div class="grid-item-label">Price Impact on Customers</div>
-        <div class="grid-item-value">8x to 15x price increases reported widely — up to 1,200% in extreme cases</div>
-        <div class="grid-item-sub">No perceived increase in product value. Pure extraction play on captive customer base that can't easily migrate.</div>
-      </div>
+    <h2 class="content-h2">Business Model</h2>
+    <p class="content-body">The Broadcom playbook is a masterclass in monetizing irreplaceable enterprise software. Perpetual licenses eliminated. All products moved to subscription. Pricing shifted to per-core with a minimum floor that dramatically inflates bills for large deployments.</p>
+    <div class="data-grid">
+      <div class="data-cell"><div class="data-label">Revenue Model</div><div class="data-value">100% Subscription — Perpetual Licenses Eliminated</div><div class="data-sub">As of early 2024, no new perpetual licenses. All products on annual or multi-year subscription. Massive increase in recurring revenue predictability for Broadcom's financials.</div></div>
+      <div class="data-cell"><div class="data-label">Pricing Mechanism</div><div class="data-value">Per Physical CPU Core — 32-Core Packs, 16-Core Minimum</div><div class="data-sub">Every CPU counted as at least 16 cores. Sold in packs of 32. Large environments with many low-core CPUs face disproportionate cost increases under this model.</div></div>
+      <div class="data-cell"><div class="data-label">Revenue Performance</div><div class="data-value">$30B VCF Total Contract Value Over 3 Years</div><div class="data-sub">Broadcom reported 80 million VCF core entitlements committed. Financially, the strategy is working — even as customer satisfaction reaches historic lows.</div></div>
+      <div class="data-cell"><div class="data-label">Price Impact on Customers</div><div class="data-value">8x to 15x increases — up to 1,200% in extreme cases</div><div class="data-sub">No perceived increase in product value. A pure extraction play on a captive customer base where switching costs currently exceed switching motivation for most large accounts.</div></div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- LAYER 7: COMPETITIVE LANDSCAPE -->
-  <section class="content-section full-width">
-    <div class="layer-label">Layer 07 · Competitive Landscape</div>
-    <h2 class="content-h2">COMPETITIVE MAP</h2>
-    <p class="content-body">Broadcom's pricing aggression has created an unprecedented migration opportunity for competitors. However, the depth of VMware's ecosystem lock-in means switching remains painful — particularly for legacy workloads built over a decade on vSphere tooling.</p>
+<!-- LAYER 7 -->
+<div id="l7" class="content-section">
+  <div class="layer-label">Layer 07 · Competitive Landscape</div>
+  <h2 class="content-h2">Competitive Map</h2>
+  <p class="content-body">Broadcom's pricing aggression has created an unprecedented migration opportunity for competitors. However, the depth of VMware's ecosystem lock-in means switching remains painful — particularly for legacy workloads built over a decade on vSphere tooling and automation.</p>
+  <table class="comp-table">
+    <thead>
+      <tr><th>Competitor</th><th>Category</th><th>Threat Level</th><th>Key Differentiator</th><th>Switching Friction</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><span class="comp-name">Nutanix</span></td><td>HCI / Private Cloud</td><td style="color:var(--red);font-weight:600;">High</td><td>Most direct feature competitor. Aggressive VMware migration programs. Strong HCI and cloud narrative.</td><td>Medium — requires re-platforming but well-supported migration tooling exists</td></tr>
+      <tr><td><span class="comp-name">Microsoft Azure Stack HCI</span></td><td>Hybrid Cloud Infrastructure</td><td style="color:var(--gold);font-weight:600;">Medium-High</td><td>Strong for Microsoft-centric enterprises. Azure Arc ties it to cloud. Deep Windows Server integration.</td><td>Low-Medium for Microsoft shops — higher for others</td></tr>
+      <tr><td><span class="comp-name">AWS / Azure / GCP</span></td><td>Public Cloud</td><td style="color:var(--gold);font-weight:600;">Medium</td><td>Full workload migration alternative. Attractive for net-new development. Less compelling for legacy lift-and-shift.</td><td>High for legacy workloads — low for new development</td></tr>
+      <tr><td><span class="comp-name">Red Hat OpenShift / KVM</span></td><td>Open Source Virtualization</td><td style="color:var(--green);font-weight:600;">Low-Medium</td><td>Zero license cost. Kubernetes-first. Strong for technically mature teams willing to invest in operational overhead.</td><td>High — requires significant engineering investment to operate at scale</td></tr>
+      <tr><td><span class="comp-name">Proxmox VE</span></td><td>Open Source Hypervisor</td><td style="color:var(--green);font-weight:600;">Low</td><td>Free, feature-rich, growing SMB community. Not enterprise-grade support model.</td><td>High for large enterprises — viable for SMB VMware refugees being priced out</td></tr>
+    </tbody>
+  </table>
+</div>
 
-    <table class="comp-table">
-      <thead>
-        <tr>
-          <th>Competitor</th>
-          <th>Category</th>
-          <th>Threat Level</th>
-          <th>Key Differentiator</th>
-          <th>Switching Friction</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><span class="comp-name">Nutanix</span></td>
-          <td>HCI / Private Cloud</td>
-          <td style="color: #ff6b6b;">🔴 High</td>
-          <td>Most direct feature competitor. Aggressive VMware migration programs. Strong HCI story.</td>
-          <td>Medium — requires re-platforming but well-supported migration tools exist</td>
-        </tr>
-        <tr>
-          <td><span class="comp-name">Microsoft Azure Stack HCI</span></td>
-          <td>Hybrid Cloud Infrastructure</td>
-          <td style="color: var(--accent);">🟡 Medium-High</td>
-          <td>Strong for Microsoft-centric shops. Deep Windows Server integration. Azure Arc ties it to cloud.</td>
-          <td>Low-Medium for Microsoft shops — high for others</td>
-        </tr>
-        <tr>
-          <td><span class="comp-name">AWS / Azure / GCP</span></td>
-          <td>Public Cloud</td>
-          <td style="color: var(--accent);">🟡 Medium</td>
-          <td>Full workload migration alternative. Attractive for net-new development. Less appealing for legacy lift.</td>
-          <td>High for legacy workloads — low for new development</td>
-        </tr>
-        <tr>
-          <td><span class="comp-name">Red Hat OpenShift / KVM</span></td>
-          <td>Open Source Virtualization</td>
-          <td style="color: #4ade80;">🟢 Low-Medium</td>
-          <td>Zero license cost. Strong for technically mature teams. Kubernetes-first.</td>
-          <td>High — requires significant engineering investment to operate at scale</td>
-        </tr>
-        <tr>
-          <td><span class="comp-name">Proxmox VE</span></td>
-          <td>Open Source Hypervisor</td>
-          <td style="color: #4ade80;">🟢 Low</td>
-          <td>Free, feature-rich, growing SMB community. Not enterprise-grade support model.</td>
-          <td>High for large enterprises — viable for SMB VMware refugees</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <!-- LAYER 8: SCORECARD -->
-  <section class="content-section full-width">
+<!-- LAYER 8 -->
+<div id="l8" class="content-section alt">
+  <div class="ci">
     <div class="layer-label">Layer 08 · Strategic Assessment</div>
-    <h2 class="content-h2">SCORECARD</h2>
-    <p class="content-body">VMware as a product remains technically strong. VMware as a business relationship is at an all-time low. Broadcom is executing a deliberate value extraction strategy — betting that switching costs exceed customer frustration. So far, they're right.</p>
-
+    <h2 class="content-h2">Scorecard</h2>
+    <p class="content-body">VMware as a product remains technically strong. VMware as a business relationship is at an all-time low. Broadcom is executing a deliberate value extraction strategy — betting that switching costs exceed customer frustration. So far, the financials prove them right.</p>
     <div class="scorecard">
-      <div class="score-item">
-        <span class="score-dimension">Product Strength</span>
-        <span class="score-rating score-green">STRONG</span>
-        <span class="score-note">Still no feature-parity replacement. 25 years of tooling and integrations built on vSphere.</span>
-      </div>
-      <div class="score-item">
-        <span class="score-dimension">Business Model</span>
-        <span class="score-rating score-red">AGGRESSIVE</span>
-        <span class="score-note">Subscription-only + per-core pricing = 8–15x price increases. Financially effective, reputationally disastrous.</span>
-      </div>
-      <div class="score-item">
-        <span class="score-dimension">Customer Trust</span>
-        <span class="score-rating score-red">BROKEN</span>
-        <span class="score-note">Decades of goodwill erased. VMware admins — the product's biggest advocates — are now its loudest critics.</span>
-      </div>
-      <div class="score-item">
-        <span class="score-dimension">Competitive Moat</span>
-        <span class="score-rating score-yellow">ERODING</span>
-        <span class="score-note">Switching costs remain high, but migration pipelines are filling up. Every renewal is a churn risk conversation.</span>
-      </div>
-      <div class="score-item">
-        <span class="score-dimension">SMB / Mid-Market</span>
-        <span class="score-rating score-red">ABANDONED</span>
-        <span class="score-note">Intentionally. Broadcom only wants Global 2000 accounts. SMBs and most MSPs are effectively cut off.</span>
-      </div>
-      <div class="score-item">
-        <span class="score-dimension">Innovation Trajectory</span>
-        <span class="score-rating score-yellow">WATCH</span>
-        <span class="score-note">VCF 9.0 shows product investment continues. But customer trust issues overshadow technical progress.</span>
-      </div>
+      <div class="score-item"><div class="score-dimension">Product Strength</div><div class="score-rating score-green">Strong</div><div class="score-note">Still no feature-parity replacement. 25 years of tooling, integrations, and certifications built around vSphere.</div></div>
+      <div class="score-item"><div class="score-dimension">Business Model</div><div class="score-rating score-red">Aggressive</div><div class="score-note">Subscription-only + per-core pricing = 8–15x price increases. Financially effective, reputationally catastrophic.</div></div>
+      <div class="score-item"><div class="score-dimension">Customer Trust</div><div class="score-rating score-red">Broken</div><div class="score-note">Decades of goodwill erased. VMware admins — historically its biggest advocates — are now its loudest critics.</div></div>
+      <div class="score-item"><div class="score-dimension">Competitive Moat</div><div class="score-rating score-yellow">Eroding</div><div class="score-note">Switching costs remain high, but migration pipelines are filling. Every renewal is now a churn-risk conversation.</div></div>
+      <div class="score-item"><div class="score-dimension">SMB / Mid-Market</div><div class="score-rating score-red">Abandoned</div><div class="score-note">Intentionally. Broadcom only wants Global 2000. Smaller customers and most MSPs have been effectively cut off.</div></div>
+      <div class="score-item"><div class="score-dimension">Innovation Trajectory</div><div class="score-rating score-yellow">Watch</div><div class="score-note">VCF 9.0 shows product investment continues. But customer trust issues overshadow technical progress narratives.</div></div>
     </div>
-  </section>
-
-  <!-- RECOMMENDATIONS -->
-  <section class="content-section full-width">
-    <div class="layer-label">Layer 08 · Recommendations</div>
-    <h2 class="content-h2">STRATEGIC RECOMMENDATIONS</h2>
-    <p class="content-body">These recommendations are written from the perspective of a PM inside Broadcom's VMware division — tasked with reversing ecosystem erosion while preserving revenue. The challenge: you can't undo the pricing, but you can rebuild trust.</p>
-
+    <br />
+    <div class="layer-label" style="margin-top:24px;">Recommendations</div>
+    <h2 class="content-h2">Strategic Recommendations</h2>
+    <p class="content-body">These recommendations are written from the perspective of a PM inside Broadcom's VMware division — tasked with reversing ecosystem erosion while preserving the revenue model.</p>
     <div class="rec-cards">
       <div class="rec-card">
         <span class="rec-timeline rec-quick">0–3 Months</span>
         <div class="rec-title">Launch a Transparent Pricing Calculator</div>
-        <p class="rec-body">Customers are shocked by renewal bills because the per-core model is opaque. Build a public, self-serve pricing calculator that helps customers model their exact costs before renewal — reducing surprise and rebuilding credibility.</p>
+        <p class="rec-body">Customers are shocked by renewal bills because the per-core model is opaque. A public, self-serve pricing calculator that lets customers model exact costs before renewal reduces surprise and begins rebuilding commercial credibility.</p>
         <div class="rec-impact">↗ Expected to reduce churn conversations by ~20% and improve NPS among existing accounts</div>
       </div>
       <div class="rec-card">
         <span class="rec-timeline rec-strategic">3–12 Months</span>
-        <div class="rec-title">Create a Migration Credit Program for VCF Upgrades</div>
-        <p class="rec-body">Customers on legacy vSphere-only deployments are the highest churn risk. A structured migration credit program — giving vSphere-only customers financial incentives to move to VCF — converts at-risk accounts into bundle customers with higher retention.</p>
+        <div class="rec-title">Create a VCF Migration Credit Program</div>
+        <p class="rec-body">Customers on vSphere-only deployments are the highest churn risk. A structured credit program giving them financial incentives to move to VCF converts at-risk accounts into bundle customers with higher retention rates.</p>
         <div class="rec-impact">↗ Target: Convert 30% of vSphere-only Global 2000 accounts to VCF within 12 months</div>
       </div>
       <div class="rec-card">
         <span class="rec-timeline rec-longterm">12+ Months</span>
-        <div class="rec-title">Rebuild the Partner Ecosystem with a Tiered SMB Pathway</div>
-        <p class="rec-body">The partner ecosystem cut was strategically damaging long-term. Reintroduce a lightweight "Community" tier for smaller MSPs and VARs — not as a revenue play, but as a pipeline feeder and ecosystem health signal for enterprise buyers who watch market momentum.</p>
-        <div class="rec-impact">↗ Slows competitive migration narrative; strengthens enterprise perception of platform longevity</div>
+        <div class="rec-title">Rebuild Partner Ecosystem with a Community Tier</div>
+        <p class="rec-body">The partner ecosystem cut damaged long-term platform health. Reintroduce a lightweight Community tier for smaller MSPs and VARs — not as a revenue play, but as an ecosystem health signal that enterprise buyers use to assess platform longevity.</p>
+        <div class="rec-impact">↗ Slows competitive migration narrative; strengthens enterprise perception of platform durability</div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- BOTTOM NAV -->
-  <section style="padding: 60px 48px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
-    <a href="index.html" class="back-link" style="margin-bottom: 0;">← All Teardowns</a>
-    <a href="salesforce.html" class="back-link" style="margin-bottom: 0;">Next: Salesforce →</a>
-  </section>
+<!-- LAYER 9 — PM LENS -->
+<div id="l9" class="pm-lens">
+  <div class="pm-lens-inner">
+    <div class="layer-label">Layer 09 · Original Thinking</div>
+    <h2 class="content-h2">Observations from my PM Lens</h2>
+    <p class="pm-lens-sub">If I were handed VMware as a PM tomorrow — inside Broadcom — here is where I would focus my first 90 days. These are my original observations, grounded in the evidence above.</p>
+    <div class="pm-cards">
+      <div class="pm-card">
+        <div class="pm-card-tag">① The Cut List — What I Would Deprioritize</div>
+        <div class="pm-card-title">Stop Investing in the Legacy vSphere Standard SKU</div>
+        <p class="pm-card-body">The vSphere Standard tier serves smaller customers Broadcom has explicitly decided not to prioritize. Continuing to maintain and support it creates operational overhead without strategic return. Resources should be redirected entirely to VCF feature development and the Global 2000 migration experience. Sunsetting Standard with a clear migration path to VVF or VCF is cleaner than slow neglect.</p>
+        <div class="pm-card-evidence">Evidence: Partner ecosystem reduction signals Broadcom's intent. Standard is the lowest-revenue, highest-support-cost tier.</div>
+      </div>
+      <div class="pm-card">
+        <div class="pm-card-tag">② The Fix List — What I Would Improve</div>
+        <div class="pm-card-title">Redesign the Renewal Communication Journey</div>
+        <p class="pm-card-body">The current experience is: customers receive a renewal quote and are shocked by the number. There is no proactive education, no simulation tool, no staged negotiation framework. I would redesign the renewal journey to start 6 months before expiry — with usage reports, cost modelling, and a dedicated CSM touchpoint. The goal: make the number feel earned, not imposed. Success metric: reduction in renewal cycle length and decrease in last-minute escalations to executive level.</p>
+        <div class="pm-card-evidence">Evidence: Customer complaint patterns consistently cite "surprise" as the primary frustration — not price alone.</div>
+      </div>
+      <div class="pm-card">
+        <div class="pm-card-tag">③ The Build List — What I Would Create</div>
+        <div class="pm-card-title">Build a VCF ROI Dashboard — In-Product</div>
+        <p class="pm-card-body">Customers who are forced onto VCF need to see its value reflected back at them continuously. I would build an in-product ROI dashboard that shows: infrastructure consolidation savings, security incident prevention metrics, and operational hours saved vs. a disaggregated tooling approach. This transforms VCF from "expensive bundle" to "investment with measurable return" — arming the IT admin to defend renewal to the CFO.</p>
+        <div class="pm-card-evidence">Evidence: 80M cores committed means large customers are in — but they need internal justification tools to stay.</div>
+      </div>
+      <div class="pm-card">
+        <div class="pm-card-tag">④ Pricing &amp; GTM Gut Check</div>
+        <div class="pm-card-title">Introduce a Multi-Year Discount Ladder with Commitments</div>
+        <p class="pm-card-body">The current model maximizes short-term extraction but incentivizes annual churn evaluation. I would introduce a meaningful multi-year commitment discount — 15% for 2 years, 25% for 3 years — in exchange for locked core counts. This smooths Broadcom's revenue recognition, reduces annual churn risk, and gives customers a face-saving way to accept higher prices by framing the negotiation around commitment rather than capitulation.</p>
+        <div class="pm-card-evidence">Evidence: $30B TCV committed over 3 years shows large customers will commit — they just need a pricing incentive to do so willingly.</div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <!-- FOOTER -->
-  <footer>
-    <span class="footer-logo">PRODUCT TEARDOWN</span>
-    <span class="footer-note">VMware · 001 of 006</span>
-  </footer>
+<div class="page-bottom-nav">
+  <a href="index.html" class="back-link" style="margin-bottom:0;">← All Teardowns</a>
+  <a href="salesforce.html" class="back-link" style="margin-bottom:0;">Next: Salesforce →</a>
+</div>
+
+<footer>
+  <span class="footer-logo">ProductDecoded</span>
+  <span class="footer-note">VMware · 001 of 006</span>
+</footer>
 
 </body>
 </html>

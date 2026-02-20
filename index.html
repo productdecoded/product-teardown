@@ -9,156 +9,115 @@
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <a href="index.html" class="nav-logo">PRODUCT TEARDOWN</a>
-    <ul class="nav-links">
-      <li><a href="#teardowns">Teardowns</a></li>
-      <li><a href="#about">Framework</a></li>
-    </ul>
-  </nav>
+<nav>
+  <a href="index.html" class="nav-logo">Product<span>Decoded</span></a>
+  <ul class="nav-links">
+    <li><a href="#teardowns">Teardowns</a></li>
+    <li><a href="#framework">Framework</a></li>
+  </ul>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-ticker">PRODUCT TEARDOWN &nbsp; PRODUCT TEARDOWN &nbsp; PRODUCT TEARDOWN &nbsp; PRODUCT TEARDOWN &nbsp;</div>
+<div class="hero">
+  <div class="hero-eyebrow">B2B Enterprise SaaS · PM Portfolio</div>
+  <h1 class="hero-title">Product<br /><em>Teardowns</em></h1>
+  <p class="hero-desc">Six deep-dive analyses of enterprise software products — deconstructing business models, competitive moats, and strategic opportunities through a product manager's lens.</p>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">6</span><span class="stat-label">Teardowns</span></div>
+    <div class="stat"><span class="stat-num">9</span><span class="stat-label">Framework Layers</span></div>
+    <div class="stat"><span class="stat-num">$2T+</span><span class="stat-label">Market Cap Covered</span></div>
+  </div>
+</div>
 
-    <div class="hero-tag">↳ B2B Enterprise SaaS · PM Portfolio</div>
-    <h1 class="hero-title">PRODUCT<br /><span>TEAR</span>DOWN</h1>
-    <p class="hero-desc">Six deep-dive analyses of enterprise software products — deconstructing business models, competitive moats, and strategic opportunities through a PM lens.</p>
-
-    <div class="hero-stats">
-      <div class="stat">
-        <span class="stat-num">6</span>
-        <span class="stat-label">Teardowns</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">8</span>
-        <span class="stat-label">Framework Layers</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">$2T+</span>
-        <span class="stat-label">Market Cap Analyzed</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- TEARDOWNS GRID -->
-  <div id="teardowns">
-    <div class="section-header">
-      <span class="section-num">01</span>
-      <h2 class="section-title">TEARDOWNS</h2>
-      <div class="section-line"></div>
-    </div>
-
-    <div class="teardowns-grid">
-
-      <!-- VMware -->
-      <a href="vmware.html" class="teardown-card">
-        <span class="card-number">001</span>
-        <div class="card-icon" style="background: rgba(0,116,217,0.15);">🖥️</div>
-        <div class="card-company">VMWARE</div>
-        <span class="card-category" style="background: rgba(0,116,217,0.1); color: #47c2ff;">Infrastructure · Virtualization</span>
-        <p class="card-desc">How Broadcom turned a $61B acquisition into a controversial subscription pivot — and what it means for enterprise infrastructure.</p>
-        <div class="card-meta">
-          <span class="card-status status-live">● Live</span>
-          <span class="card-arrow">↗</span>
-        </div>
-      </a>
-
-      <!-- Salesforce -->
-      <a href="salesforce.html" class="teardown-card">
-        <span class="card-number">002</span>
-        <div class="card-icon" style="background: rgba(0,161,224,0.15);">☁️</div>
-        <div class="card-company">SALESFORCE</div>
-        <span class="card-category" style="background: rgba(0,161,224,0.1); color: #47c2ff;">CRM · Cloud SaaS</span>
-        <p class="card-desc">The OG cloud CRM — dissecting how Salesforce built an unbreakable enterprise moat through acquisitions, ecosystem lock-in, and platform dominance.</p>
-        <div class="card-meta">
-          <span class="card-status status-coming">○ Coming Soon</span>
-          <span class="card-arrow">↗</span>
-        </div>
-      </a>
-
-      <!-- Slack -->
-      <a href="slack.html" class="teardown-card">
-        <span class="card-number">003</span>
-        <div class="card-icon" style="background: rgba(74,21,75,0.3);">💬</div>
-        <div class="card-company">SLACK</div>
-        <span class="card-category" style="background: rgba(232,255,71,0.1); color: var(--accent);">Collaboration · Messaging</span>
-        <p class="card-desc">From $27B acquisition to fighting for survival inside Salesforce — the complicated second act of the product that invented the category.</p>
-        <div class="card-meta">
-          <span class="card-status status-coming">○ Coming Soon</span>
-          <span class="card-arrow">↗</span>
-        </div>
-      </a>
-
-      <!-- Notion -->
-      <a href="notion.html" class="teardown-card">
-        <span class="card-number">004</span>
-        <div class="card-icon" style="background: rgba(255,255,255,0.05);">📝</div>
-        <div class="card-company">NOTION</div>
-        <span class="card-category" style="background: rgba(255,255,255,0.05); color: var(--light);">Productivity · PLG</span>
-        <p class="card-desc">The everything app that became everyone's second brain — analyzing Notion's PLG flywheel, AI bet, and its fight to own the enterprise knowledge layer.</p>
-        <div class="card-meta">
-          <span class="card-status status-coming">○ Coming Soon</span>
-          <span class="card-arrow">↗</span>
-        </div>
-      </a>
-
-      <!-- HubSpot -->
-      <a href="hubspot.html" class="teardown-card">
-        <span class="card-number">005</span>
-        <div class="card-icon" style="background: rgba(255,122,89,0.15);">🎯</div>
-        <div class="card-company">HUBSPOT</div>
-        <span class="card-category" style="background: rgba(255,107,53,0.1); color: var(--accent2);">CRM · Inbound Marketing</span>
-        <p class="card-desc">The challenger CRM that made enterprise software lovable — unpacking HubSpot's freemium-to-enterprise motion and its battle against Salesforce.</p>
-        <div class="card-meta">
-          <span class="card-status status-coming">○ Coming Soon</span>
-          <span class="card-arrow">↗</span>
-        </div>
-      </a>
-
-      <!-- AWS -->
-      <a href="aws.html" class="teardown-card">
-        <span class="card-number">006</span>
-        <div class="card-icon" style="background: rgba(255,153,0,0.15);">⚡</div>
-        <div class="card-company">AWS</div>
-        <span class="card-category" style="background: rgba(255,153,0,0.1); color: #ffaa33;">Cloud · Infrastructure</span>
-        <p class="card-desc">The $100B+ cloud giant that started as a side project — deconstructing AWS's product strategy, pricing architecture, and why it's so hard to leave.</p>
-        <div class="card-meta">
-          <span class="card-status status-coming">○ Coming Soon</span>
-          <span class="card-arrow">↗</span>
-        </div>
-      </a>
-
-    </div>
+<div id="teardowns">
+  <div class="section-wrap">
+    <div class="section-eyebrow">01 · Collection</div>
+    <h2 class="section-title">All Teardowns</h2>
   </div>
 
-  <!-- ABOUT / FRAMEWORK -->
-  <section id="about" class="about-strip">
+  <div class="teardowns-grid">
+    <a href="vmware.html" class="teardown-card">
+      <span class="card-number">001</span>
+      <div class="card-icon">🖥️</div>
+      <div class="card-company">VMware</div>
+      <span class="card-category">Infrastructure · Virtualization</span>
+      <p class="card-desc">How Broadcom turned a $61B acquisition into the most controversial pricing story in enterprise tech — and what it reveals about platform power.</p>
+      <div class="card-meta"><span class="card-status status-live">● Live</span><span class="card-arrow">↗</span></div>
+    </a>
+
+    <a href="salesforce.html" class="teardown-card">
+      <span class="card-number">002</span>
+      <div class="card-icon">☁️</div>
+      <div class="card-company">Salesforce</div>
+      <span class="card-category">CRM · Cloud SaaS</span>
+      <p class="card-desc">The OG cloud CRM — dissecting how Salesforce built an unbreakable enterprise moat through acquisitions, ecosystem lock-in, and the Agentforce AI bet.</p>
+      <div class="card-meta"><span class="card-status status-coming">○ Coming Soon</span><span class="card-arrow">↗</span></div>
+    </a>
+
+    <a href="slack.html" class="teardown-card">
+      <span class="card-number">003</span>
+      <div class="card-icon">💬</div>
+      <div class="card-company">Slack</div>
+      <span class="card-category">Collaboration · Messaging</span>
+      <p class="card-desc">From $27B acquisition to fighting for survival inside Salesforce — the complicated second act of the product that invented a category.</p>
+      <div class="card-meta"><span class="card-status status-coming">○ Coming Soon</span><span class="card-arrow">↗</span></div>
+    </a>
+
+    <a href="notion.html" class="teardown-card">
+      <span class="card-number">004</span>
+      <div class="card-icon">📝</div>
+      <div class="card-company">Notion</div>
+      <span class="card-category">Productivity · PLG</span>
+      <p class="card-desc">The everything app that became everyone's second brain — analyzing Notion's PLG flywheel, AI bet, and its fight to own the enterprise knowledge layer.</p>
+      <div class="card-meta"><span class="card-status status-coming">○ Coming Soon</span><span class="card-arrow">↗</span></div>
+    </a>
+
+    <a href="hubspot.html" class="teardown-card">
+      <span class="card-number">005</span>
+      <div class="card-icon">🎯</div>
+      <div class="card-company">HubSpot</div>
+      <span class="card-category">CRM · Inbound Marketing</span>
+      <p class="card-desc">The challenger CRM that made enterprise software lovable — unpacking HubSpot's freemium-to-enterprise motion and its battle against Salesforce.</p>
+      <div class="card-meta"><span class="card-status status-coming">○ Coming Soon</span><span class="card-arrow">↗</span></div>
+    </a>
+
+    <a href="aws.html" class="teardown-card">
+      <span class="card-number">006</span>
+      <div class="card-icon">⚡</div>
+      <div class="card-company">AWS</div>
+      <span class="card-category">Cloud · Infrastructure</span>
+      <p class="card-desc">The $100B+ cloud platform that started as a side project — deconstructing AWS's product strategy, pricing architecture, and why it's so hard to leave.</p>
+      <div class="card-meta"><span class="card-status status-coming">○ Coming Soon</span><span class="card-arrow">↗</span></div>
+    </a>
+  </div>
+</div>
+
+<div id="framework" class="about-strip">
+  <div class="about-inner">
     <div class="about-left">
-      THE 8-LAYER<br /><span class="highlight">TEARDOWN</span><br />FRAMEWORK
+      <h2>The 9-Layer<br /><em>Teardown</em><br />Framework</h2>
+      <p>Applied consistently across<br />all six products</p>
     </div>
     <div class="about-right">
-      <p>Each teardown follows a rigorous 8-layer framework designed to surface the strategic thinking that separates great PMs from good ones.</p>
-      <div class="framework-pills">
-        <span class="pill">01 · Market Context</span>
-        <span class="pill">02 · Product Overview</span>
-        <span class="pill">03 · User Analysis</span>
-        <span class="pill">04 · Value Proposition</span>
-        <span class="pill">05 · UX & Features</span>
-        <span class="pill">06 · Business Model</span>
-        <span class="pill">07 · Competitive Landscape</span>
-        <span class="pill">08 · Recommendations</span>
+      <p>Each teardown follows a rigorous 9-layer framework — built to surface the kind of strategic thinking that separates great PMs from good ones. The final layer, <em>Observations from my PM Lens</em>, captures original thinking on what I would cut, fix, build, and change.</p>
+      <div class="framework-list">
+        <div class="framework-item"><span class="fw-num">01</span><span class="fw-name">Company &amp; Market Context</span></div>
+        <div class="framework-item"><span class="fw-num">02</span><span class="fw-name">Product Overview</span></div>
+        <div class="framework-item"><span class="fw-num">03</span><span class="fw-name">User &amp; Customer Analysis</span></div>
+        <div class="framework-item"><span class="fw-num">04</span><span class="fw-name">Problem &amp; Value Proposition</span></div>
+        <div class="framework-item"><span class="fw-num">05</span><span class="fw-name">Product Experience (UX &amp; Features)</span></div>
+        <div class="framework-item"><span class="fw-num">06</span><span class="fw-name">Business Model</span></div>
+        <div class="framework-item"><span class="fw-num">07</span><span class="fw-name">Competitive Landscape</span></div>
+        <div class="framework-item"><span class="fw-num">08</span><span class="fw-name">Strategic Assessment &amp; Recommendations</span></div>
+        <div class="framework-item"><span class="fw-num">09</span><span class="fw-name">Observations from my PM Lens</span></div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- FOOTER -->
-  <footer>
-    <span class="footer-logo">PRODUCT TEARDOWN</span>
-    <span class="footer-note">Built for PM interviews · B2B Enterprise SaaS Focus</span>
-  </footer>
+<footer>
+  <span class="footer-logo">ProductDecoded</span>
+  <span class="footer-note">productdecoded.github.io/product-teardown</span>
+</footer>
 
 </body>
 </html>
